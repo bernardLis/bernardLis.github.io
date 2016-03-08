@@ -23,7 +23,6 @@ h6 {
 
 .topnav {
     font-size: 16px;
-    background-color: black;
 }
 
 .lead {
@@ -39,41 +38,41 @@ h6 {
 }
 
 .intro-message {
-    margin: 10% 0 20% 0 ;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 15% 0 10% 0;
+    padding: 5%;
+    box-sizing: border-box;
     color: yellow;
     background-color: black;
     position: relative;
-    text-align: center;
 }
 
 .intro-message > h1 {
-    margin: 0;
+    margin: 1% 0;
+    padding: 0;
     text-shadow: 4px 4px 3px rgba(0,0,0,0.7);
     font-size: 5em;
 }
 .intro-message > h2 {
-    margin: 2%;
+    margin: 0;
+    padding: 0;
     text-shadow: 4px 4px 3px rgba(0,0,0,0.7);
     font-size: 3em;
 }
 .intro-message > h3 {
-    margin: 2%;
+    margin: 0;
+    padding: 0;
     text-shadow: 4px 4px 3px rgba(0,0,0,0.7);
     font-size: 2em;
 }
 .intro-message > h4 {
-    margin: 2%;
+    margin: 1% 0;
+    padding: 0;
     text-shadow: 4px 4px 3px rgba(0,0,0,0.7);
     font-size: 1.5em;
 }
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+.intro-social-buttons{
+    margin: 1% 0;
 }
 
 @media(max-width:767px) {
@@ -337,4 +336,5 @@ p.copyright {
 }
 .portfolio img{
     cursor: pointer;
+    border-radius: 100%;
 }
