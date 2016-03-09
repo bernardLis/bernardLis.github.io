@@ -37,6 +37,12 @@ h6 {
     background-size: cover;
 }
 
+.intro-msg-wrapper{
+    max-width:1060px;
+    float:none;
+    margin:0 auto;
+}
+
 .intro-message {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 15% 0 10% 0;
@@ -48,31 +54,63 @@ h6 {
 }
 
 .intro-message > h1 {
-    margin: 1% 0;
+    margin: 1% 0 3% 0;
     padding: 0;
-    text-shadow: 4px 4px 3px rgba(0,0,0,0.7);
-    font-size: 5em;
+    font-size: 3.929em;
+    letter-spacing:.4em;
 }
 .intro-message > h2 {
     margin: 0;
     padding: 0;
-    text-shadow: 4px 4px 3px rgba(0,0,0,0.7);
-    font-size: 3em;
+    font-size: 2.571em;
+    font-weight:400;
+    letter-spacing:.35em;
 }
+
+.intro-message .txt-right{
+    text-align: right;
+}
+
 .intro-message > h3 {
-    margin: 0;
+    margin: 15px 0 0 0;
     padding: 0;
-    text-shadow: 4px 4px 3px rgba(0,0,0,0.7);
-    font-size: 2em;
+    font-size: 2.571em;
+    font-weight:400;
+    letter-spacing:.35em;
+}
+
+.intro-message > h3 .right{
+    float:right;
+}
+
+
+.intro-message > h3 sup{
+    font-size:50%;
+    top:-0.9em;
 }
 .intro-message > h4 {
-    margin: 1% 0;
+    margin: 3% 0;
     padding: 0;
-    text-shadow: 4px 4px 3px rgba(0,0,0,0.7);
-    font-size: 1.5em;
+    font-weight:400;
+    font-size: 1.571em;
+    letter-spacing:0.35em;
 }
 .intro-social-buttons{
-    margin: 1% 0;
+    margin: 4% 0 0;
+    text-align: center;
+}
+
+
+@media (max-width:799px){
+    .intro-message > h3 .right{
+        float:none;
+    }
+    .intro-message{
+        font-size:.8em;
+    }
+    .intro-message .txt-right{
+        text-align:inherit;
+    }
 }
 
 @media(max-width:767px) {
@@ -269,12 +307,14 @@ p.copyright {
     top: 16px;
     left: 50%;
     margin-left: -25px;
-    background-color: #999999;
+    background:url(../img/introBg.png);
     z-index: 100;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
+    background-size:1200% 1200%;
+    background-position:66px 175px;
 }
 
 .timeline > li.timeline-inverted > .timeline-panel {
@@ -295,26 +335,6 @@ p.copyright {
     right: auto;
 }
 
-.timeline-badge.primary {
-    background-color: #2e6da4 !important;
-}
-
-.timeline-badge.success {
-    background-color: #3f903f !important;
-}
-
-.timeline-badge.warning {
-    background-color: #f0ad4e !important;
-}
-
-.timeline-badge.danger {
-    background-color: #d9534f !important;
-}
-
-.timeline-badge.info {
-    background-color: #5bc0de !important;
-}
-
 .timeline-title {
     margin-top: 0;
     color: inherit;
@@ -331,10 +351,30 @@ p.copyright {
 .portfolio-item {
     margin-bottom: 25px;
 }
+
+.portfolio-item h3{
+    text-align:center;
+}
+
 .portfolio{
     background-color: #efefef;
 }
+
+.portfolio-img{
+    width:100%;
+    margin:0 auto;
+    max-width:200px;
+    height:200px;
+    position:relative;
+    overflow:hidden;
+}
+
 .portfolio img{
     cursor: pointer;
-    border-radius: 100%;
+    position:absolute;
+    margin:auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 }
