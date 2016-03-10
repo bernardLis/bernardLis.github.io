@@ -18,11 +18,22 @@ h4,
 h5,
 h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight:700;
 }
 
 .topnav {
     font-size: 16px;
+}
+
+.navbar-brand{
+    padding:8px 15px 0;
 }
 
 .lead {
@@ -156,6 +167,7 @@ h6 {
 }
 
 .section-heading {
+    margin-top:0;
     margin-bottom: 30px;
 }
 
@@ -166,15 +178,16 @@ h6 {
 }
 
 .banner {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background-size: cover;
+    padding: 80px 0;
+    color: yellow;
+    background:black;
 }
 
 .banner h2 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 3em;
+    font-size: 2.571em;
+    letter-spacing: .4em;
+    text-transform:uppercase;
 }
 
 .banner ul {
@@ -213,7 +226,20 @@ h6 {
 
 footer {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: black;
+    color:yellow;
+}
+
+footer img{
+    float:right;
+    padding-right:15px;
+}
+
+footer h4{
+    font-weight: 400;
+    font-size: 1.571em;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
 }
 
 p.copyright {
@@ -338,6 +364,11 @@ p.copyright {
 .timeline-title {
     margin-top: 0;
     color: inherit;
+    font-size:20px;
+}
+
+.timeline-heading--next{
+    margin-top:30px;
 }
 
 .timeline-body > p,
@@ -348,6 +379,12 @@ p.copyright {
 .timeline-body > p + p {
     margin-top: 5px;
 }
+
+.timeline-body i{
+    font-size:1.1em;
+    font-weight:bold;
+}
+
 .portfolio-item {
     margin-bottom: 25px;
 }
