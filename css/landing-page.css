@@ -242,6 +242,14 @@ footer h4{
     text-transform: uppercase;
 }
 
+footer .graphics{
+    text-align:right;
+    padding:0 15px;
+    font-size:11px;
+    color:rgba(255,255,255,.5);
+    margin-top:-23px;
+}
+
 p.copyright {
     margin: 15px 0 0;
 }
